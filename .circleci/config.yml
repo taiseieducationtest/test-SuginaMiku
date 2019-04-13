@@ -2,14 +2,9 @@ version: 2
 jobs:
   build:
     docker:
-      - image: ocaml/opam2:ubuntu
+      - image: suginamiku/le3sw:latest
     steps:
       - checkout
-      - run:
-          name: Install
-          command: |
-            sudo apt install -y m4
-            opam install menhir dune ounit
       - run:
           name: Build
           command: |

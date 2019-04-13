@@ -1,0 +1,9 @@
+(tests
+  (names
+    ex3_2_3
+  )
+  (libraries
+    oUnit
+    miniml
+  )
+)
